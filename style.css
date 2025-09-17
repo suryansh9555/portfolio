@@ -1,6 +1,4 @@
-/* ========================================
-   RESET
-======================================== */
+
 * {
   margin: 0;
   padding: 0;
@@ -18,9 +16,7 @@
   --secondary-color: #ff00ff;
 }
 
-/* ========================================
-   BODY & GLOBAL
-======================================== */
+
 body {
   font-family: 'Helvetica', Arial, sans-serif;
   background: radial-gradient(circle at top left, var(--bg-mid), var(--bg-dark));
@@ -39,9 +35,6 @@ h1, h2, h3, p, li, a, button {
   -webkit-text-fill-color: transparent;
 }
 
-/* ========================================
-   NAVIGATION
-======================================== */
 .site-header {
   width: 100%;
   position: fixed;
@@ -73,9 +66,7 @@ h1, h2, h3, p, li, a, button {
   color: var(--primary-color);
 }
 
-/* ========================================
-   HERO SECTION
-======================================== */
+
 .hero {
   height: 100vh;
   display: flex;
@@ -111,9 +102,6 @@ h1, h2, h3, p, li, a, button {
   gap: 15px;
 }
 
-/* ========================================
-   BUTTONS
-======================================== */
 .btn {
   padding: 12px 28px;
   border-radius: 30px;
@@ -138,9 +126,6 @@ h1, h2, h3, p, li, a, button {
 
 .secondary-btn { border-color: #555; }
 
-/* ========================================
-   SECTIONS
-======================================== */
 section {
   padding: 100px 20px;
   text-align: center;
@@ -152,9 +137,7 @@ h2 {
   letter-spacing: 1px;
 }
 
-/* ========================================
-   SKILLS SECTION
-======================================== */
+
 .skills-section {
   display: flex;
   flex-direction: column;
@@ -215,9 +198,6 @@ h2 {
   color: var(--text-light);
 }
 
-/* ========================================
-   ABOUT SECTION
-======================================== */
 .about-content-wrapper {
   background: var(--bg-card);
   backdrop-filter: blur(12px);
@@ -232,9 +212,7 @@ h2 {
   text-align: left;
 }
 
-/* ========================================
-   PROJECTS SECTION
-======================================== */
+
 .projects-list {
   display: flex;
   gap: 25px;
@@ -272,9 +250,6 @@ h2 {
   background: #222;
 }
 
-/* ========================================
-   CONTACT SECTION
-======================================== */
 .contact-form {
   margin-top: 20px;
   display: inline-flex;
@@ -316,7 +291,7 @@ h2 {
   transform: translateY(-2px);
 }
 
-/* SOCIAL LINKS */
+
 .social-links {
   margin-top: 25px;
   display: flex;
@@ -334,9 +309,6 @@ h2 {
   color: var(--primary-color);
 }
 
-/* ========================================
-   QUOTES SECTION
-======================================== */
 .quotes-section {
   padding: 100px 20px;
   text-align: center;
@@ -350,9 +322,7 @@ h2 {
   margin: 0 auto;
 }
 
-/* ========================================
-   FOOTER
-======================================== */
+
 .site-footer {
   text-align: center;
   padding: 25px 0;
@@ -360,9 +330,6 @@ h2 {
   color: var(--text-mid);
 }
 
-/* ========================================
-   GLOW EFFECTS
-======================================== */
 body::before,
 body::after,
 body .corner-glow-top-right,
