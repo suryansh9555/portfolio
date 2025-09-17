@@ -1,0 +1,284 @@
+/* General resets + base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  color: #fff;
+  background-color: #000; /* or a dark background if you want the dark theme */
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* HEADER / NAVIGATION */
+
+.site-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 40px;
+  background: rgba(0,0,0,0.8); /* slight transparency if desired */
+  z-index: 100;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.navbar li a {
+  color: #ccc;
+  font-size: 1rem;
+  text-transform: lowercase;
+  padding: 5px 10px;
+  transition: color 0.3s;
+}
+
+.navbar li.active a,
+.navbar li a:hover {
+  color: #fff;
+}
+
+/* HERO / HOME SECTION */
+
+.hero {
+  height: 100vh; /* full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero .intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero .intro .name {
+  font-weight: bold;
+}
+
+.hero .subheading,
+.hero .goal {
+  max-width: 600px;
+  margin: 10px auto;
+  color: #ddd;
+}
+
+/* SKILLS SECTION */
+
+.skills-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.skills-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.skills-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.skill {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 20px;
+  width: 150px;
+  text-align: center;
+}
+
+.skill .icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  /* you may use background‑images or SVGs instead of plain text icons */
+}
+
+.skill .label {
+  font-size: 1rem;
+  color: #eee;
+}
+
+/* ABOUT SECTION */
+
+.about-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.about-content {
+  display: inline‑block;
+  background: rgba(255,255,255,0.1);
+  padding: 40px;
+  border-radius: 30px;
+  max-width: 800px;
+  text-align: left;
+}
+
+.about-content ul li {
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+/* PROJECTS SECTION */
+
+.projects-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.projects-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.projects-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid #444;
+  width: 250px;
+  height: 300px;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.project-image {
+  width: 90%;
+  height: 70%;
+  background: #333; /* placeholder color or image */
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.project-card .btn {
+  padding: 10px 20px;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.project-card .btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* CONTACT SECTION */
+
+.contact-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.availability {
+  margin-bottom: 30px;
+  color: #ddd;
+}
+
+.contact-form {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.contact-form input[type="email"] {
+  padding: 12px 20px;
+  border: 1px solid #555;
+  border-radius: 20px;
+  background: transparent;
+  color: #fff;
+  width: 250px;
+}
+
+.contact-form input[type="email"]::placeholder {
+  color: #ccc;
+}
+
+.contact-form button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.contact-form button:hover {
+  opacity: 0.8;
+}
+
+.social-links {
+  margin-top: 30px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: #ccc;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #fff;
+}
+
+/* QUOTES SECTION */
+
+.quotes-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.quotes-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.quotes-section .quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #ddd;
+  max-width: 600px;
+  margin: 0 auto;
+}
