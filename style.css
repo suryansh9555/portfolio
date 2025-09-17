@@ -300,24 +300,21 @@ h2 {
 }
 
 .contact-form button {
-  padding: 15px 25px;
-  border-radius: 30px;
+  padding: 12px 18px;
+  border-radius: 25px;
   border: none;
-  background: var(--primary-color); /* bright color */
-  color: #000;                      /* black text for contrast */
-  font-weight: 700;
-  font-size: 1rem;
+  background: var(--text-light);
+  color: #000;
+  font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: transform 0.2s, background 0.3s;
 }
 
 .contact-form button:hover {
-  background: var(--secondary-color); /* hover color */
-  color: #fff;                        /* text changes to white */
-  transform: translateY(-3px);        /* subtle lift */
-  box-shadow: 0 8px 20px rgba(5, 230, 170, 0.5); /* glow effect */
+  background: var(--primary-color);
+  color: #000;
+  transform: translateY(-2px);
 }
-
 
 /* SOCIAL LINKS */
 .social-links {
@@ -383,23 +380,3 @@ body .corner-glow-bottom-left {
 body::before { top: 100px; left: -50px; background: rgba(0, 255, 255, 0.25); }
 body::after { bottom: -50px; right: -50px; background: rgba(0, 255, 255, 0.25); }
 
-/* ========================================
-   TYPING ANIMATION
-======================================== */
-.typing {
-  border-right: 2px solid var(--text-light);
-  white-space: nowrap;
-  overflow: hidden;
-  display: inline-block;
-  animation: typing 2s steps(18) 1 forwards, blink 0.7s step-end infinite;
-}
-
-@keyframes typing {
-  from { width: 0; }
-  to { width: 16ch; }
-}
-
-@keyframes blink {
-  50% { border-color: transparent; }
-  100% { border-color: var(--text-light); }
-}
