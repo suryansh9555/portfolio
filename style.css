@@ -29,7 +29,7 @@ body {
 ul { list-style: none; }
 a { text-decoration: none; color: inherit; }
 
-h1, h2, h3, p, li, a, button {
+h1, h2, h3, p, li, a {
   background: var(--text-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -283,6 +283,10 @@ h2 {
   font-weight: 600;
   cursor: pointer;
   transition: transform 0.2s, background 0.3s;
+}
+
+#button-contact{
+  color: black!important ;
 }
 
 .contact-form button:hover {
